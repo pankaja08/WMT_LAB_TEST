@@ -27,6 +27,11 @@ const itemSchema = new mongoose.Schema(
       default: "",
       trim: true,
     },
+    warrantyPeriod: {
+      type: String,
+      required: [true, "Warranty period is required"],
+      trim: true,
+    },
   },
   { timestamps: true }
 );
