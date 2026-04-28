@@ -55,6 +55,7 @@ export const updateItem = async (req, res) => {
   }
 };
 
+
 export const deleteItem = async (req, res) => {
   try {
     const deletedItem = await Item.findByIdAndDelete(req.params.id);
